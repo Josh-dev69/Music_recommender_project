@@ -1,8 +1,13 @@
-{% extends "main/base.html" %}
+{% extends 'base.html' %}
+
+{% block title %}Welcome to Musicify{% endblock %}
+
 {% block content %}
-    {% for post in posts %}
-        <h1>{{ post.title }}</h1>
-        <p>By {{ post.author }} on {{ post.date_posted }}</p>
-        <p>{{ post.content }}</p>
-    {% endfor %}
-{% endblock content %}
+<div class="jumbotron text-center">
+    <h1 class="display-4">Welcome to Musicify</h1>
+    <p class="lead">Your ultimate destination for discovering personalized music recommendations tailored to your unique taste.</p>
+    <hr class="my-4">
+    <p>Powered by cutting-edge technology and the vast Spotify library, Musicify delivers curated playlists and song suggestions that resonate with you.</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Get Started</a>
+</div>
+{% endblock %}
